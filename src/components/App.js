@@ -1,26 +1,24 @@
-import React from 'react';
-import styled from "styled-components";
+import React, {useState} from 'react';
+import {ThemeProvider} from "styled-components";
+import {GlobalCSS,Button,H1} from "../Styles.js";
+import DiscordTemplate from "./DiscordTemplate/DiscordTemplate.js";
 
 
-function App() {
+const App = () => {
+
+  const [theme, setTheme] = useState({mode:"dark"});
+  const changeTheme = () => theme.mode === "dark" ? setTheme({mode:"light"}) : setTheme({mode:"dark"});
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+        <nav><Button onClick={changeTheme}>Theme <span>🙌</span></Button></nav>
+        <H1>React Discord Template</H1>
+        <DiscordTemplate />
+      <GlobalCSS/>
+    </ThemeProvider>
   );
-}
 
+
+}
 export default App;
