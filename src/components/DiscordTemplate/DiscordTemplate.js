@@ -6,6 +6,9 @@ const DiscordTemplate = () => {
     return(
         <MainContainer>
             <UserBarContainer>
+                <div className="add-chat">
+                    +
+                </div>
                 <NavigationUser />
             </UserBarContainer>
             <SeverNameContainer>

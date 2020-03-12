@@ -29,6 +29,30 @@ export const UserBarContainer = styled.div`
     padding: 20px 0;
     overflow-x: hidden;
     
+    .add-chat{
+        user-select: none;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border: 1px dashed ${props => props.theme.mode === "dark" ? "#535559" : "#7f7f7f" }; 
+        margin: 0 auto 40px auto;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 35px;
+        color: ${props => props.theme.mode === "dark" ? "#535559" : "#7f7f7f" };
+
+
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0,0.59,0.25,1);
+
+
+        &:hover{
+            border-radius: 10px;
+            color: ${props => props.theme.mode === "dark" ? "#fff" : "#000" };
+            border-color: ${props => props.theme.mode === "dark" ? "#fff" : "#000" };
+        }
+    }
     
     .navigate-user-container{
 
@@ -49,7 +73,7 @@ export const UserBarContainer = styled.div`
             border-radius: 22px;
             width: 9px;
             top: 50%;
-            left: -14px;
+            left: -15px;
             background: ${props => props.theme.mode === "dark" ? "#fff" : "#000"};
             position: absolute;
             -webkit-transform: translateY(-50%);
