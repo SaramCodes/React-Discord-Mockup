@@ -9,14 +9,63 @@ const lightLightBg = "#ddd";
 
 export const MainContainer = styled.div`
     background-color: ${props => props.theme.mode === "dark" ? darkDarkBg : darkLightBg };
+    position: relative;
     margin: auto;
     height: 600px;
     width: 1000px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     display: flex;
+    
     div{
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0,0.59,0.25,1);
+    }
+
+    .add-chat-modal-container{
+        z-index: 2;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        display: none;
+    }
+
+    .add-chat-modal-container-show{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .add-chat-modal{
+        height: 300px;
+        width: 600px;
+        background: red;
+        z-index: 2;
+        position: relative;
+        animation-name: float-in;
+        animation-duration:0.3s;
+        animation-timing-function: cubic-bezier(0,0.59,0.25,1);
+        animation-fill-mode: forwards;
+    }
+
+    .close-modal{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @keyframes float-in{
+        from{
+            opacity: 0;
+            transform: scale(0.95) rotateY(30deg);
+        }
+        to{
+            opacity: 1;
+            transform: scale(1) rotateY(0deg);
+        }
     }
 
 `;

@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-        <nav><Button onClick={changeTheme}>Theme <span>🙌</span></Button></nav>
+        <nav><Button onClick={changeTheme}>Theme <span role="img">🙌</span></Button></nav>
         <H1>React Discord Template</H1>
         <DiscordTemplate />
       <GlobalCSS/>
