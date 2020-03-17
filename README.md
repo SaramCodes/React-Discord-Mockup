@@ -1,3 +1,5 @@
+## A template of Discord made with React using Styled Components.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
