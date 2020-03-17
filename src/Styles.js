@@ -11,8 +11,10 @@ export const GlobalCSS = createGlobalStyle`
       padding: 0;
       box-sizing: border-box;
     }
-    h1,h2,h3,h4,h5,h6,p,span,li,input,button,a{
+    h1,h2,h3,h4,h5,h6,p,span,li,input,button,a, div{
         font-family: "Spartan", "Arial", sans-serif;
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0,0.59,0.25,1);
     }
 
     html, body{
@@ -69,6 +71,7 @@ export const Button = styled.a`
         transform: scale(0.98);
         border-radius: 0;
         box-shadow: 5px 10px 0 0 ${props => props.theme.mode === "dark" ? "#fff" : "#000"};
+        letter-spacing: 5px;
     }
     
 `;
@@ -77,8 +80,6 @@ export const Button = styled.a`
 export const H1 = styled.h1`
     font-size: 40px;
     font-weight: 700;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0, 0.59, 0.25, 1);
     text-align: center;
     text-transform: capitalize;
     color: ${props => props.theme.mode === "dark" ? "#fff" : "#000"};
