@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {ThemeProvider} from "styled-components";
 import {GlobalCSS,Button,H1} from "../Styles.js";
 import DiscordTemplate from "./DiscordTemplate/DiscordTemplate.js";
+import {GlobalProvider} from "../context/GlobalState.js";
 
 
 const App = () => {
@@ -12,10 +13,13 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <GlobalProvider>
         <nav><Button onClick={changeTheme}>Theme <span role="img">🙌</span></Button></nav>
         <H1>React Discord Template</H1>
         <DiscordTemplate />
-      <GlobalCSS/>
+        <GlobalCSS/>
+      </GlobalProvider>
+
     </ThemeProvider>
   );
 

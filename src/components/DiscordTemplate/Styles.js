@@ -38,6 +38,7 @@ export const MainContainer = styled.div`
 
 
     .add-chat-modal{
+        overflow-y: auto;
         height: 300px;
         width: 600px;
         background-color: ${props => props.theme.mode === "dark" ? lightDarkBg : lightLightBg};
@@ -47,6 +48,13 @@ export const MainContainer = styled.div`
         animation-duration:0.3s;
         animation-timing-function: cubic-bezier(0,0.59,0.25,1);
         animation-fill-mode: forwards;
+        .empty-new-users{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+            color: ${props => props.theme.mode === "dark" ? "#fff" : "#000" };
+        }
     }
 
     .add-chat-modal-close{
@@ -59,6 +67,29 @@ export const MainContainer = styled.div`
         animation-duration: 0.3s;
         animation-timing-function: cubic-bezier(0,0.59,0.25,1);
         animation-fill-mode: forwards;
+    }
+
+    .new-chat-user{
+        height: 70px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid ${props => props.theme.mode === "dark" ? mediumDarkBg : mediumLightBg};
+        img{
+            max-width: 50px;
+            border-radius: 100%;
+            margin-right: 20px;
+        }
+
+        h5{
+            color: ${props => props.theme.mode === "dark" ? "#fff" : "#000" };
+        }
+        &:hover{
+            cursor: pointer;
+            background: ${props => props.theme.mode === "dark" ? "#4d5158" : "#bbb"};
+            border-bottom: 0px solid ${props => props.theme.mode === "dark" ? mediumDarkBg : mediumLightBg};
+            
+        }
     }
 
     .new-chat-heading{
@@ -197,10 +228,14 @@ export const UserBarContainer = styled.div`
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+        img{
+            max-width: 100%;
+            border-radius: 100%
+        }
     }
 `;
 
-export const SeverNameContainer = styled.div`
+export const ServerNameContainer = styled.div`
     height: 100%;
     flex-basis: 250px;
     flex-shrink: 0;
@@ -287,15 +322,32 @@ export const ChatMainContainer = styled.div`
         height: calc(600px - 150px);
         overflow: auto;
         overflow-x: hidden;
+        .empty-chat{
+            height: 100%;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            
+            h5{
+                color: #fff;
+                font-size: 20px;
+                font-weight: lighter;    
+            }
+        }
     }
 
     .chat{
         padding: 20px;
         border-bottom: 1px solid ${props => props.theme.mode === "dark" ? "#43464c"  : "#BCB9B3"};
         display: flex;
+        
     }
 
     .chat-avatar{
+        img{
+            max-width: 100%;
+            border-radius: 100%;
+        }
         width: 40px;
         flex-basis: 40px;
         flex-shrink: 0;

@@ -1,0 +1,116 @@
+{
+    "active": [
+        {
+            "id": 1,
+            "username": "John Doe",
+            "isActive": true,
+            "avatar": "https://i1.sndcdn.com/avatars-000296531234-l9el3x-t500x500.jpg",
+            "chats":[
+                {
+                    "sender" : "me",
+                    "body": "Hi bud what's up?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                },
+                {
+                    "sender" : "them",
+                    "body": "Nothing much, wat bout u?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                }
+            ] 
+        },
+        {
+            "id": 2,
+            "username": "Han Doe",
+            "isActive": false,
+            "avatar": "https://i1.sndcdn.com/avatars-000296531234-l9el3x-t500x500.jpg",
+            "chats":[
+                {
+                    "sender" : "me",
+                    "body": "I like turtles",
+                    "time": "2012-04-23T18:25:43.511Z"
+                },
+                {
+                    "sender" : "them",
+                    "body": "Cool! Me too! what a coincidence bro!",
+                    "time": "2012-04-23T18:25:43.511Z"
+                }
+            ] 
+        }
+    ],
+
+    "inactive": [
+        {
+            "id": 3,
+            "username": "Jane Doe",
+            "isActive": false,
+            "avatar": "https://avatarfiles.alphacoders.com/143/143386.png"
+        },
+        {
+            "id": 4,
+            "username": "Leo Kang",
+            "isActive": false,
+            "avatar": "https://i1.sndcdn.com/avatars-000296531234-l9el3x-t500x500.jpg"
+        }
+    ],
+
+    "global":[
+        {
+            "server": "general",
+            "chats" :[
+                {
+                    "id": 3,
+                    "username": "Jane Doe",
+                    "avatar": "https://avatarfiles.alphacoders.com/143/143386.png",
+                    "body": "Hi bud what's up?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                },
+                {
+                    "id": 3,
+                    "username": "Jane Doe",
+                    "avatar": "https://avatarfiles.alphacoders.com/143/143386.png",
+                    "body": "Nothing much, wat bout u?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                }
+            ]
+        },
+        {
+            "server": "training",
+            "chats" :[
+                {
+                    "id": 3,
+                    "username": "Jane Doe",
+                    "avatar": "https://avatarfiles.alphacoders.com/143/143386.png",
+                    "body": "Hi bud what's up?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                },
+                {
+                    "id": 3,
+                    "username": "Jane Doe",
+                    "avatar": "https://avatarfiles.alphacoders.com/143/143386.png",
+                    "body": "Nothing much, wat bout u?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                }
+            ]
+        },
+        {
+            "server": "video editing",
+            "chats" :[
+                {
+                    "id": 3,
+                    "username": "Jane Doe",
+                    "avatar": "https://avatarfiles.alphacoders.com/143/143386.png",
+                    "body": "Hi bud what's up?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                },
+                {
+                    "id": 3,
+                    "username": "Jane Doe",
+                    "avatar": "https://avatarfiles.alphacoders.com/143/143386.png",
+                    "body": "Nothing much, wat bout u?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                }
+            ]
+        }
+
+    ]
+}
