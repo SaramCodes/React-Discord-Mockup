@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-discord-mockup/static/js/main.f241c80f.chunk.js",
-    "main.js.map": "/react-discord-mockup/static/js/main.f241c80f.chunk.js.map",
+    "main.js": "/react-discord-mockup/static/js/main.c7167a0c.chunk.js",
+    "main.js.map": "/react-discord-mockup/static/js/main.c7167a0c.chunk.js.map",
     "runtime-main.js": "/react-discord-mockup/static/js/runtime-main.b553e33e.js",
     "runtime-main.js.map": "/react-discord-mockup/static/js/runtime-main.b553e33e.js.map",
-    "static/js/2.054adab9.chunk.js": "/react-discord-mockup/static/js/2.054adab9.chunk.js",
-    "static/js/2.054adab9.chunk.js.map": "/react-discord-mockup/static/js/2.054adab9.chunk.js.map",
+    "static/js/2.bd00049d.chunk.js": "/react-discord-mockup/static/js/2.bd00049d.chunk.js",
+    "static/js/2.bd00049d.chunk.js.map": "/react-discord-mockup/static/js/2.bd00049d.chunk.js.map",
     "index.html": "/react-discord-mockup/index.html",
-    "precache-manifest.603b342a5a6fd9397bb1efb3c03f11b6.js": "/react-discord-mockup/precache-manifest.603b342a5a6fd9397bb1efb3c03f11b6.js",
+    "precache-manifest.44cb60bbe474603d605d2746ae6d1f3e.js": "/react-discord-mockup/precache-manifest.44cb60bbe474603d605d2746ae6d1f3e.js",
     "service-worker.js": "/react-discord-mockup/service-worker.js",
-    "static/js/2.054adab9.chunk.js.LICENSE.txt": "/react-discord-mockup/static/js/2.054adab9.chunk.js.LICENSE.txt"
+    "static/js/2.bd00049d.chunk.js.LICENSE.txt": "/react-discord-mockup/static/js/2.bd00049d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b553e33e.js",
-    "static/js/2.054adab9.chunk.js",
-    "static/js/main.f241c80f.chunk.js"
+    "static/js/2.bd00049d.chunk.js",
+    "static/js/main.c7167a0c.chunk.js"
   ]
 }

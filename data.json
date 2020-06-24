@@ -1,0 +1,27 @@
+{
+    "active": [
+        {
+            "username": "John Doe",
+            "avatar": "avatar.jpg",
+            "chats":[
+                {
+                    "sender" : "me",
+                    "body": "Hi bud what's up?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                },
+                {
+                    "sender" : "them",
+                    "body": "Nothing much, wat bout u?",
+                    "time": "2012-04-23T18:25:43.511Z"
+                }
+            ] 
+        }
+    ],
+
+    "inactive": [
+        {
+            "username": "Jane Doe",
+            "avatar": "avatar.jpg"
+        }
+    ]
+}
