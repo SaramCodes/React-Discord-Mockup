@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce45850f59efdc4d692339ea43f134f7",
+    "revision": "5ac1dbb36d18c65d3b7ebb0742808d31",
     "url": "/react-discord-mockup/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-discord-mockup/static/js/2.bd00049d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e9bc12af3f72715a5229",
-    "url": "/react-discord-mockup/static/js/main.c7167a0c.chunk.js"
+    "revision": "2f164cbf563c2b2f1ea8",
+    "url": "/react-discord-mockup/static/js/main.2ae1c3e7.chunk.js"
   },
   {
     "revision": "a5e7163b8dcf9eb2cdd6",
