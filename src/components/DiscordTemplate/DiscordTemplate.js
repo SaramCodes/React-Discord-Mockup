@@ -13,7 +13,7 @@ const DiscordTemplate = () => {
     const {openAddChatModal} = useContext(GlobalContext);
     const {closeAddChatBg} = useContext(GlobalContext);
     
-
+    console.log(Data)
     
     
     let addChatModelVisible = addChatVisible.visible ? "add-chat-modal-container add-chat-modal-container-show" : "add-chat-modal-container";

@@ -4,7 +4,7 @@
             "id": 1,
             "username": "John Doe",
             "isActive": true,
-            "avatar": "https://i1.sndcdn.com/avatars-000296531234-l9el3x-t500x500.jpg",
+            "avatar": "https://i.pinimg.com/236x/8e/0a/99/8e0a999d326bc68de8e4428a0653a73b.jpg",
             "chats":[
                 {
                     "sender" : "me",
@@ -55,7 +55,9 @@
 
     "global":[
         {
+            "id": 31,
             "server": "general",
+            "isActive": false,
             "chats" :[
                 {
                     "id": 3,
@@ -74,7 +76,9 @@
             ]
         },
         {
-            "server": "training",
+            "id": 34,
+            "server": "overwatch",
+            "isActive": false,
             "chats" :[
                 {
                     "id": 3,
@@ -93,7 +97,9 @@
             ]
         },
         {
-            "server": "video editing",
+            "id": 37,
+            "server": "street fighter",
+            "isActive": false,
             "chats" :[
                 {
                     "id": 3,

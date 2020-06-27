@@ -28,6 +28,9 @@ export const MainContainer = styled.div`
         width: 100%;
         background: rgba(0,0,0,0.6);
         display: none;
+        *{
+            user-select: none;
+        }
     }
 
     .add-chat-modal-container-show{
@@ -371,7 +374,7 @@ export const ChatMainContainer = styled.div`
         line-height: 1.5;
         margin-bottom: 6px;
         span{
-            color: ${props => props.theme.mode === "dark" ? "#686c75"  : "#97938A"};
+            color: ${props => props.theme.mode === "dark" ? "#686c75"  : "#1f1e1b"};
             font-size: 9px;
             margin-left: 6px;
             font-weight:400;

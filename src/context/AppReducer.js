@@ -16,6 +16,10 @@ export default (state, action) => {
                         }
                     }),
                     inactive: state.Data.inactive.filter(user => user.id !== action.payload),
+                    global: state.Data.global.map(server => {
+                        server.isActive = false;
+                        return server;
+                    })
                 },
 
                 addChatVisible: {visible: false, btnActive: true}
@@ -39,7 +43,12 @@ export default (state, action) => {
                             return user;
                         }
                     }),
-                    inactive: state.Data.inactive
+                    inactive: state.Data.inactive,
+                    global: state.Data.global.map(server => {
+                        server.isActive = false;
+                        return server;
+                    })
+
                 }
             }
 
@@ -54,6 +63,24 @@ export default (state, action) => {
                 ...state,
                 addChatVisible: action.payload
             }
+        
+
+        case "CHANGE_SERVER":
+            const myState = {
+                ...state,
+                Data: {
+                    active: state.Data.active.map(user => {
+                        user.isActive = false;
+                        return user;
+                    }),
+                    inactive: state.Data.inactive,
+                    global: state.Data.global.map(server => {
+                        action.payload === server.id ? server.isActive = true : server.isActive = false
+                        return server;
+                    })
+                }
+            }
+            return myState;
 
         default:
             return state;

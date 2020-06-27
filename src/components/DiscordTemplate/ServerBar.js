@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import {ServerNameContainer} from "./Styles.js";
+import  {GlobalContext} from "../../context/GlobalState.js";
+
+
 
 const ServerBar = () => {
+
+    const {Data} = useContext(GlobalContext);
+    const {changeServer} = useContext(GlobalContext);
+
+    
+    
     return(
         <ServerNameContainer>
             <div className="server-name-heading">
@@ -9,9 +18,10 @@ const ServerBar = () => {
             </div>
             
             <ul className="server-list">
-                <li className="server server-active"><p><span>#</span>general</p></li>                    
-                <li className="server"><p><span>#</span>bananas</p></li>                    
-                <li className="server"><p><span>#</span>Main Chat</p></li>                    
+                {Data.global.map((server, key) => (
+                <li onClick={() => changeServer(server.id)} key={key} className={"server " + (server.isActive ? 'server-active' : '')}><p><span>#</span>{server.server}</p></li>
+                ))}
+                               
             </ul>
         </ServerNameContainer>
     )

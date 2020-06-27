@@ -34,6 +34,13 @@ export const GlobalProvider = ({children}) => {
             "payload": id
         })
     }
+    
+    const changeServer = (id) => {
+        dispatch({
+            "type": "CHANGE_SERVER",
+            "payload": id
+        })
+    }
 
     const openAddChatModal = (e) => {
         dispatch({
@@ -55,7 +62,8 @@ export const GlobalProvider = ({children}) => {
             activeInactiveUser,
             openAddChatModal,
             closeAddChatBg,
-            changeUser
+            changeUser,
+            changeServer
         }}>
             {children}
         </GlobalContext.Provider>
